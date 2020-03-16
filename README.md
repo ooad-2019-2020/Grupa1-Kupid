@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="220" height="100" src="https://github.com/ooad-2019-2020/Grupa1-Kupid/blob/master/AppLogo.jpg">
+</p>
+
 ## Tema:
 Dating platforma
 ## Članovi:
