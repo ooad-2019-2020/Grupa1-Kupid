@@ -1,6 +1,6 @@
-##Tema:
+## Tema:
 Dating platforma
-##Članovi:
+## Članovi:
 1. Adna Halilović
 2. Ajla Džaferbegović
 3. Zejd Čelenka
