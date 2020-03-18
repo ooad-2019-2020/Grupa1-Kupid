@@ -1,4 +1,8 @@
 <p align="center">
+  <img width="150" height="150" src="https://media.giphy.com/media/xTcnT2ZYSaCTdkTSmI/giphy.gif">
+</p>
+
+<p align="center">
   <img width="350" height="200" src="https://github.com/ooad-2019-2020/Grupa1-Kupid/blob/master/AppLogo.jpg">
 </p>
 
