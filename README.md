@@ -17,7 +17,7 @@ Dating platforma
 LOVID-20 je aplikacija za pronalaženje osobe/a sa kojom registrovani korisnik dijeli iste interese za ljubav ili druženje na kraći, odnosno duži vremenski period. Korištenje ovog programskog rješenja potpuno je pojednostavljeno i prilagođeno u korist korisnika, čak iako je njegovo informatičko znanje svedeno na minimum. Cilj softvera omogućava lakše upoznavanje osoba bez obzira na njihovu trenutnu lokaciju, što podrazumijeva virtuelni doticaj dviju osoba u potrazi za ljubav sa dva različita kontinenta. Sigurno je ovakav oblik ljubavne ili prijateljske komunikacije u velikoj prednosti nad ustaljenim normama upoznavanja koje ćemo nazvati „expired“, uzimajući u obzir enormni utjecaj tehnologije na svakodnevni život dvadeset i prvog stoljeća.
 ## Funkcionalnosti:
 ###### Registrovani korisnik:
-- Kreira i ažurira korisnički račun
+- Ima mogućnost ažuriraranja korisničkog računa
 - Unosi informacije relevantne za online predstavljanje
 - Pretražuje osobe na osnovu lokacije ili zajedničkih interesovanja
 - Šalje privatne poruke
@@ -27,7 +27,7 @@ LOVID-20 je aplikacija za pronalaženje osobe/a sa kojom registrovani korisnik d
 - Trajno briše kreirani nalog po potrebi
 ###### Neregistrovani korisnik:
 - Ima mogućnost pregleda osnovnih informacija sistemske aplikacije i pretplatničkih paketa (FREE ili VIP)
-- Mogućnost registracije kao novi korisnik
+- Mogućnost registracije kao novi korisnik i kreiranja novog korisničkog računa
 - Ima mogućnost pregleda javnih feedback komentara registrovanih korisnika koji su zadovoljni aplikacijom
 ###### VIP korisnik:
 - Posjeduje sva prava kao i obični registrovani korisnik
