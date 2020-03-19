@@ -20,10 +20,9 @@ LOVID-20 je aplikacija za pronalaženje osobe/a sa kojom registrovani korisnik d
 - Ima mogućnost ažuriraranja korisničkog računa
 - Unosi informacije relevantne za online predstavljanje
 - Pretražuje osobe na osnovu lokacije ili zajedničkih interesovanja
-- Šalje privatne poruke
+- Šalje privatne poruke (samo korisnicima koji su pozitivno ocijenili njegov profil)
 - Posjeduje mogućnost pregleda informacija drugih registrovanih korisnika
 - Može ostaviti feedback ukoliko je (ne)zadovoljan uslugom
-- Po želji mijenja svoj pretplatnički račun sa običnog na VIP i obratno
 - Trajno briše kreirani nalog po potrebi
 ###### Neregistrovani korisnik:
 - Ima mogućnost pregleda osnovnih informacija sistemske aplikacije i pretplatničkih paketa (FREE ili VIP)
@@ -31,7 +30,10 @@ LOVID-20 je aplikacija za pronalaženje osobe/a sa kojom registrovani korisnik d
 - Ima mogućnost pregleda javnih feedback komentara registrovanih korisnika koji su zadovoljni aplikacijom
 ###### VIP korisnik:
 - Posjeduje sva prava kao i obični registrovani korisnik
+- Korisnik postaje VIP korisnik nakon što postigne određeni broj pozitivnih recenzija na svoj profil, taj broj administrator određuje
 - Posjeduje dodatnu pogodnost slanja emotikona ili ličnih fotografija učitanih sa konzole u privatnim porukama
+- Ima mogućnost da kreira grupne chatove
+- Ima mogućnost da šalje poruke bilo kojem drugom korisniku
 ###### Administrator:
 - Posjeduje mogućnosti pregleda svih registrovanih korisnika
 - Brisanje korisnika po potrebi
