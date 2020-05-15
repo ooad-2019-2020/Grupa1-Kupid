@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DatingApp.Models
+namespace Lovid20.Models
 {
     public class RegistrovaniKorisnik : Korisnik, IPregledPaketa
     {
