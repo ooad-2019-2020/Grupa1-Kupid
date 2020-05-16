@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Lovid20.Models
 {
-    public class RegistrovaniKorisnik : Korisnik, IPregledPaketa
+    public class RegistrovaniKorisnik : Korisnik, IPregledPaketa, IPretragaKorisnika
     {
         private int _brojPratitelja;
         private List<RegistrovaniKorisnik> pratitelji;
@@ -21,6 +21,11 @@ namespace Lovid20.Models
         }
 
         public List<String> pregledajPakete()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<RegistrovaniKorisnik> pretraziKorisnike(String filter)
         {
             throw new NotImplementedException();
         }
