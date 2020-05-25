@@ -9,12 +9,13 @@ namespace Lovid20.Models
     public class Administrator : IPregledPaketa, IPretragaKorisnika
     {
         public String email { get; set; }
-      //   public String lozinka { get; set; }
+        public String lozinka { get; set; }
       //  IStrategija strategija;
         
-        public Administrator(String email)
+        public Administrator(String email, String lozinka)
         {
             this.email = email;
+            this.lozinka = lozinka;
         }
         public List<String> pregledajPakete()
         {
@@ -22,6 +23,11 @@ namespace Lovid20.Models
         }
 
         public List<RegistrovaniKorisnik> pretraziKorisnike(String filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void obrisiKorisnika(RegistrovaniKorisnik korisnik)
         {
             throw new NotImplementedException();
         }
