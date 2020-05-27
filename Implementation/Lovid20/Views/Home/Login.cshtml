@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: rgb(235,119,119);">
+    <div class="container">
+        <a class="navbar-brand" id="logo" href="#">LOVID-20</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+            <ul class="nav navbar-nav mr-auto shadow"></ul><span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" id="sign" href="#">Sign Up</a></span>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 border-0">
+                <div><img src="~/images/html.png" style="width: 400px;height: 800px;position: absolute;left: 50%;z-index: 1;top:-30%"></div>
+            </div>
+            <div class="col-md-6">
+                <div style="text-align: center;">
+                    <div><img src="~/images/AppLogo.png" style="margin: 40px;"></div>
+                    <div><input type="text" id="usrNme" style="width: 317px;margin: 20px;" placeholder="Username"></div>
+                    <div><input type="password" id="pass" style="width: 317px;margin: 20px;" placeholder="Password"></div>
+                    <div><a id="forgot" href="#" style="padding: 10px;">Forgot password?</a></div>
+                    <div><button class="btn btn-primary" id="logBtn" type="button" style="margin: 10px;">Log In</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
