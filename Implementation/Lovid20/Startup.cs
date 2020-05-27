@@ -12,6 +12,7 @@ using Lovid20.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Lovid20.Models;
 
 namespace Lovid20
 {
@@ -29,7 +30,10 @@ namespace Lovid20
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("SQLServer")));
+            services.AddDbContext<LovidContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("SQLServer")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();

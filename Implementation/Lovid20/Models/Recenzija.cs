@@ -13,7 +13,7 @@ namespace Lovid20.Models
         public RegistrovaniKorisnik autor { get; set; }
         public Recenzija(String text, int stars, RegistrovaniKorisnik author)
         {
-            tekst = text; brojZvjezdica = stars; author = author; datumObjave = DateTime.Now;
+            tekst = text; brojZvjezdica = stars; autor = author; datumObjave = DateTime.Now;
         }
     }
 }

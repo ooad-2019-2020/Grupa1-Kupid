@@ -10,7 +10,9 @@ namespace Lovid20.Models
         public RegistrovaniKorisnik posiljalac { get; set; }
         public RegistrovaniKorisnik primalac { get; set; }
         public String poruka { get; set; }
-        public Poruka(RegistrovaniKorisnik sender, RegistrovaniKorisnik reciever, String mssg){
+        public Poruka(RegistrovaniKorisnik sender, RegistrovaniKorisnik reciever, String mssg)
+        {
             posiljalac = sender; primalac = reciever; poruka = mssg;
+        }
     }
 }
