@@ -13,19 +13,19 @@
                 <li class="nav-item" role="presentation"></li>
                 <li class="nav-item" role="presentation"></li>
             </ul><a  asp-controller="Home" asp-action="Login" style="color: rgb(36,62,153);">Login</a>
-            <a href="packages" style="padding-left: 10px;color: rgb(36,62,153);">Packages</a>
-            <a href="reviews" style="padding-left: 10px;color: rgb(36,62,153);">Reviews</a>
+            <a asp-controller="Home" asp-action="Packages" style="padding-left: 10px;color: rgb(36,62,153);">Packages</a>
+            <a asp-controller="Home" asp-action="Reviews" style="padding-left: 10px;color: rgb(36,62,153);">Reviews</a>
         </div>
     </div>
 </nav>
 <img style="width: 500px;position: absolute;z-index: 3;height: 250px;/*top: 0px;*/left: 10%;bottom: 50%;" src="~/images/AppLogo.png">
 <img style="width: 400px;height: 650px;position: relative;left: 35%;z-index: 1;margin-top: 10px;" src="~/images/couple-png-1-transparent.png">
 <a href="#" style="position: absolute;left: 76%;bottom: 36.3%;">Log In</a>
-<button class="btn btn-primary shadow" data-bs-hover-animate="pulse" type="button" style="position: absolute;left: 71%;bottom: 27%;background-color: rgb(213,145,107);color: rgb(4,0,0);">
+<button class="btn btn-primary shadow" id="signId" data-bs-hover-animate="pulse" type="button" style="position: absolute;left: 71%;bottom: 27%;background-color: rgb(213,145,107);color: rgb(4,0,0);">
     <strong>Sign Up</strong></button><strong style="position: absolute;right: 15.1%;bottom: 71%;width: 300px;height: 100px;font-size: 35px;color: rgb(18,17,17);">Register now</strong>
-<input type="text" style="position: absolute;left: 65%;bottom: 40%;width: 250px;" placeholder="password">
+<input type="text" id="passId" style="position: absolute;left: 65%;bottom: 40%;width: 250px;" placeholder="Password">
 <small style="position: absolute;left: 65%;bottom: 36.3%;font-size: 16px;">Already a member?</small>
-<input type="text" style="position: absolute;left: 65%;bottom: 50%;width: 250px;" placeholder="email">
-<input type="text" style="position: absolute;left: 65%;bottom: 60%;width: 250px;" placeholder="surname">
-<input type="text" style="position: absolute;left: 65%;bottom: 70%;width: 250px;" placeholder="name">
+<input type="text" id="maild" style="position: absolute;left: 65%;bottom: 50%;width: 250px;" placeholder="E-mail">
+<input type="text" id="surId" style="position: absolute;left: 65%;bottom: 60%;width: 250px;" placeholder="Surname">
+<input type="text" id="nameId" style="position: absolute;left: 65%;bottom: 70%;width: 250px;" placeholder="Name">
 

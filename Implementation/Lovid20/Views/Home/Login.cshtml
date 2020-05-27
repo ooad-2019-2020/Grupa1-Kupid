@@ -3,7 +3,7 @@
     ViewData["Title"] = "Login";
 }
 
-<nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color: rgb(235,119,119);">
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-button shadow" style="background-color: rgb(235,119,119);">
     <div class="container">
         <a class="navbar-brand" id="logo" href="#">LOVID-20</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse"
@@ -21,8 +21,8 @@
             <div class="col-md-6">
                 <div style="text-align: center;">
                     <div><img src="~/images/AppLogo.png" style="margin: 40px;"></div>
-                    <div><input type="text" id="usrNme" style="width: 317px;margin: 20px;" placeholder="Username"></div>
-                    <div><input type="password" id="pass" style="width: 317px;margin: 20px;" placeholder="Password"></div>
+                    <div><input type="text" id="usrNme" required="required" style="width: 317px;margin: 20px;" placeholder="Username"></div>
+                    <div><input type="password" id="pass" required="required" style="width: 317px;margin: 20px;" placeholder="Password"></div>
                     <div><a id="forgot" href="#" style="padding: 10px;">Forgot password?</a></div>
                     <div><button class="btn btn-primary" id="logBtn" type="button" style="margin: 10px;">Log In</button></div>
                 </div>
