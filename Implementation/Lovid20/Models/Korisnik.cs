@@ -7,8 +7,9 @@ namespace Lovid20.Models
 {
     public abstract class Korisnik
     {
-       //public int idKorisnika { get; set; }
-       // public String lozinka { get; set; }
+        //public int idKorisnika { get; set; }
+        // public String lozinka { get; set; }
+      //  public int ID { get; set; }
         public String ime { get; set; }
         public String prezime { get; set; }
         public String drzava { get; set; }
