@@ -2,7 +2,9 @@
 @{
     ViewData["Title"] = "Packages";
 }
-
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    </head>
 <nav class="navbar navbar-light navbar-expand-md shadow" style="background-color: rgb(235,119,119);">
     <div class="container-fluid">
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -11,12 +13,24 @@
                 <li class="nav-item" role="presentation"></li>
                 <li class="nav-item" role="presentation"></li>
                 <li class="nav-item" role="presentation"></li>
-            </ul><a asp-controller="Home" asp-action="Login"  style="color: rgb(36,62,153);">Login</a><a asp-controller="Home" asp-action="Index"  style="padding-left: 10px;color: rgb(36,62,153);">Sign Up</a>
+            </ul><a asp-controller="Home" asp-action="Index" style="color: rgb(36,62,153);">Sign Up</a>
         </div>
     </div>
 </nav>
-<img style="position: absolute;left: 20%;bottom: 30%;" src="~/images/free.png"><small style="font-size: 20px;position: absolute;left: 59%;bottom: 20%;"><strong>$15.99 / month</strong><br>Create group chats and message EVERYONE!</small><small style="font-size: 20px;position: absolute;left: 20%;bottom: 20%;">Sing up today and start<br>&nbsp;your <em>love&nbsp;</em>journey inside the computer&nbsp;</small>
-<img style="width: 350px;position: absolute;z-index: 3;height: 170px;/*top: 0px;*/left: 37%;bottom: 65%;" src="~/images/AppLogo.png">
-<img style="position: absolute;left: 55%;bottom: 38%;width: 300px;" src="~/images/vip.png"><a asp-controller="Home" asp-action="Reviews"  style="position: absolute;left: 42.5%;bottom: 7.3%;">Check out our user reviews</a><a asp-controller="Home" asp-action="Index"  style="position: absolute;left: 20%;bottom: 15.3%;font-size: 20px;">Click here to become a member</a>
-
-
+<div class="container" style="width: 1300px;height: 760px;">
+    <div class="row">
+        <div class="col"><img src="~/images/AppLogo.png" style="height: 180px;position: relative;left: 30%;bottom: -20%;z-index: 2;"></div>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col"><img class="animate__animated animate__heartBeat " src="~/images/free.png" style="position: relative;left: 30%;bottom: -30%;"></div>
+        <div class="col"><img class="animate__animated animate__heartBeat " src="~/images/vip.png" style="position: relative;height: 130px;bottom: -50%;left: 20%;"></div>
+    </div>
+    <div class="row">
+        <div class="col"><small style="font-size: 20px;color: rgb(16,17,17);position: relative;left: 20%;bottom: -150%;">Sign up today and start your<br>&nbsp;<em>true love </em>journey through the computer<em>&nbsp;</em><br></small></div>
+        <div class="col"><small style="font-size: 20px;color: rgb(27,28,28);position: relative;bottom: -145%;left: 30%;">Only $15.99 / month<br>Create group chats and message EVERYONE<br></small></div>
+    </div>
+    <div class="row">
+        <div class="col"><a asp-controller="Home" asp-action="Index" style="position: relative;left: 10%;bottom: -395%;font-size: 20px;">Click here to become a member</a></div>
+    </div>
+</div>
