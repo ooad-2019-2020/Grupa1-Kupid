@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\Implementation",
+    "\\Implementation\\Lovid API",
     "\\Implementation\\Lovid20",
     "\\Implementation\\Lovid20\\Views",
     "\\Implementation\\Lovid20\\Views\\Home"
