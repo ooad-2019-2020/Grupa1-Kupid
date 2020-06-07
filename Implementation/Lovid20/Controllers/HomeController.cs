@@ -91,11 +91,12 @@ namespace Lovid20.Controllers
         {
             if (check(username,password,surname,email))
             {
-                var korisnik = new RegistrovaniKorisnikDB(username, password, surname, email);
+                var svi = context.Korisnik.ToList();
+                var lista = svi.OrderByDescending(x => x.idKorisnika);
+                var korisnik = new RegistrovaniKorisnikDB(username, password, surname, email, lista.ElementAt(0).idKorisnika+1);
                 context.Korisnik.Add(korisnik);
                 context.SaveChanges();
-                ViewBag.Ime = username;
-                ViewBag.Surname = surname;
+                TempData["korisnik"] = Newtonsoft.Json.JsonConvert.SerializeObject(korisnik);
                 return RedirectToAction("MyProfile", "Profile");
             }
             ViewBag.Message = "Pogrešni podaci!";

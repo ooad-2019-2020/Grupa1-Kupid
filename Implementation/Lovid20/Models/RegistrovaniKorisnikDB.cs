@@ -41,9 +41,9 @@ namespace Lovid20.Models
         {
 
         }
-        public RegistrovaniKorisnikDB(String name, String pass, String sur, String mail)
+        public RegistrovaniKorisnikDB(String name, String pass, String sur, String mail, int id)
         {
-            idKorisnika = 1;
+            idKorisnika = id;
             ime = name;
             lozinka = pass;
             prezime = sur;
