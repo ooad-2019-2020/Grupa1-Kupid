@@ -23,7 +23,7 @@ namespace Lovid20.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<RegistrovaniKorisnikDB>().ToTable("RegistrovaniKorisnik");
+            modelBuilder.Entity<RegistrovaniKorisnikDB>().ToTable("RegistrovaniKorisnik").Property(i=>i.idKorisnika).ValueGeneratedOnAdd();
             modelBuilder.Entity<TipKorisnika>().ToTable("TipKorisnika");
             modelBuilder.Entity<PrijavaDB>().ToTable("Prijava");
             modelBuilder.Entity<RecenzijaDB>().ToTable("Recenzija");

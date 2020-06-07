@@ -1,0 +1,107 @@
+﻿@model IEnumerable<Lovid20.Models.RegistrovaniKorisnikDB>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.lozinka)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prezime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.drzava)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.grad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.slika)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.biografija)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumRodjenja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.spol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stanje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.trajanjeVIP)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.lozinka)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prezime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.drzava)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.grad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.slika)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.biografija)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumRodjenja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.spol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stanje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.trajanjeVIP)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idKorisnika">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idKorisnika">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idKorisnika">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

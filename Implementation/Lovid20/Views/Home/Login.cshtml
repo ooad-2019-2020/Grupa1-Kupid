@@ -19,14 +19,17 @@
                 <div><img src="~/images/html.png" style="width: 400px;height: 800px;position: absolute;left: 50%;z-index: 1;top:-30%"></div>
             </div>
             <div class="col-md-6">
-                <div style="text-align: center;">
-                    <div><img src="~/images/AppLogo.png" style="margin: 50px; margin-left:5px;"></div>
-                    <div><input type="text" id="usrNme" required="required" style="width: 317px;height:40px; margin: 20px;" placeholder="Username"></div>
-                    <div><input type="password" id="pass" required="required" style="width: 317px; height:40px; margin: 10px;" placeholder="Password"></div>
-                    <div><a id="forgot" asp-controller="Home" asp-action="ForgotPassword" style="padding: 10px;">Forgot password?</a></div>
-                    <div><button class="btn btn-primary" id="logBtn" type="button" style="margin: 10px;">Log In</button></div>
+                @using (Html.BeginForm("Login", "Home"))
+                {
+                    <div style="text-align: center;">
+                        <div><img src="~/images/AppLogo.png" style="margin: 50px; margin-left:5px;"></div>
+                        <div><input type="text" id="usrNme" name="username" required="required" style="width: 317px;height:40px; margin: 20px;" placeholder="Username"></div>
+                        <div><input type="password" id="pass" name="password" required="required" style="width: 317px; height:40px; margin: 10px;" placeholder="Password"></div>
+                        <div><a id="forgot" asp-controller="Home" asp-action="ForgotPassword" style="padding: 10px;">Forgot password?</a></div>
+                        <div><button class="btn btn-primary" id="logBtn" type="submit" style="margin: 10px;">Log In</button></div>
+                    </div>
+                }
                 </div>
-            </div>
         </div>
     </div>
 </div>

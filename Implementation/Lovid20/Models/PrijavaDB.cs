@@ -9,7 +9,6 @@ namespace Lovid20.Models
         public int id { get; set; }
         public string razlog { get; set; }
         public DateTime datum { get; set; }
-        [ForeignKey("id")]
 
         public virtual ICollection<RegistrovaniKorisnikDB> Korisnici { get; set; }
     }

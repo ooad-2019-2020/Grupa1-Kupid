@@ -3,7 +3,11 @@
     "",
     "\\Implementation",
     "\\Implementation\\Lovid API",
+    "\\Implementation\\Lovid API\\Controllers",
+    "\\Implementation\\Lovid API\\Models",
     "\\Implementation\\Lovid20",
+    "\\Implementation\\Lovid20\\Controllers",
+    "\\Implementation\\Lovid20\\Models",
     "\\Implementation\\Lovid20\\Views",
     "\\Implementation\\Lovid20\\Views\\Home"
   ],

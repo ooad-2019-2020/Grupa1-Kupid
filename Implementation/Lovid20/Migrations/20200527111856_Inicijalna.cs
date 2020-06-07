@@ -82,7 +82,7 @@ namespace Lovid20.Migrations
                 columns: table => new
                 {
                     id = table.Column<int>(nullable: false),
-                    idKorisnika = table.Column<int>(nullable: false),
+                    idKorisnika = table.Column<int>(nullable: true),
                     lozinka = table.Column<string>(nullable: true),
                     ime = table.Column<string>(nullable: true),
                     prezime = table.Column<string>(nullable: true),
@@ -95,18 +95,12 @@ namespace Lovid20.Migrations
                     datumRodjenja = table.Column<DateTime>(nullable: false),
                     spol = table.Column<string>(nullable: true),
                     stanje = table.Column<string>(nullable: true),
-                    trajanjeVIP = table.Column<DateTime>(nullable: false),
+                    trajanjeVIP = table.Column<DateTime>(nullable: true),
                     pratitelji = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_RegistrovaniKorisnik", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_RegistrovaniKorisnik_Prijava_id",
-                        column: x => x.id,
-                        principalTable: "Prijava",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

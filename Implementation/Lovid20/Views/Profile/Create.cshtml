@@ -1,0 +1,93 @@
+﻿@model Lovid20.Models.RegistrovaniKorisnikDB
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>RegistrovaniKorisnikDB</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="lozinka" class="control-label"></label>
+                <input asp-for="lozinka" class="form-control" />
+                <span asp-validation-for="lozinka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ime" class="control-label"></label>
+                <input asp-for="ime" class="form-control" />
+                <span asp-validation-for="ime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prezime" class="control-label"></label>
+                <input asp-for="prezime" class="form-control" />
+                <span asp-validation-for="prezime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="drzava" class="control-label"></label>
+                <input asp-for="drzava" class="form-control" />
+                <span asp-validation-for="drzava" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="grad" class="control-label"></label>
+                <input asp-for="grad" class="form-control" />
+                <span asp-validation-for="grad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="username" class="control-label"></label>
+                <input asp-for="username" class="form-control" />
+                <span asp-validation-for="username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="slika" class="control-label"></label>
+                <input asp-for="slika" class="form-control" />
+                <span asp-validation-for="slika" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="biografija" class="control-label"></label>
+                <input asp-for="biografija" class="form-control" />
+                <span asp-validation-for="biografija" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumRodjenja" class="control-label"></label>
+                <input asp-for="datumRodjenja" class="form-control" />
+                <span asp-validation-for="datumRodjenja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="spol" class="control-label"></label>
+                <input asp-for="spol" class="form-control" />
+                <span asp-validation-for="spol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="stanje" class="control-label"></label>
+                <input asp-for="stanje" class="form-control" />
+                <span asp-validation-for="stanje" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="trajanjeVIP" class="control-label"></label>
+                <input asp-for="trajanjeVIP" class="form-control" />
+                <span asp-validation-for="trajanjeVIP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

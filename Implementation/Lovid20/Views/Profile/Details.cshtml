@@ -1,0 +1,96 @@
+﻿@model Lovid20.Models.RegistrovaniKorisnikDB
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>RegistrovaniKorisnikDB</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.lozinka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.lozinka)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.prezime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.prezime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.drzava)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.drzava)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.grad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.grad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.slika)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.slika)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.biografija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.biografija)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumRodjenja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumRodjenja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.spol)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.spol)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.stanje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.stanje)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.trajanjeVIP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.trajanjeVIP)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idKorisnika">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
