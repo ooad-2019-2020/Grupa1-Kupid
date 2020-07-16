@@ -45,3 +45,5 @@ LOVID-20 je aplikacija za pronalaženje osobe/a sa kojom registrovani korisnik d
 > Obični ili VIP
 - Neregistrovani korisnik
 - Administrator
+## Web Aplikacija:
+ <a href="https://lovid20.azurewebsites.net/">Lovid20</a>
